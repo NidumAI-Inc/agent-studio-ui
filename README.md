@@ -7,8 +7,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with `create-next-
 First, clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/NidumAI-Inc/agent-studio-ui.git
+cd agent-studio-ui
 ```
 
 Then, install the dependencies:
@@ -20,6 +20,8 @@ yarn install
 # or
 pnpm install
 ```
+
+Note: You need to clone `Nidum Bot` to access chat bot inside the app. To setup `Nidum Bot`, visit [`Nidum Bot`](https://github.com/NidumAI-Inc/agent-studio-vui-widget.git) repo.
 
 ## Environment Configuration
 This project uses environment variables for configuration. Before running the project, you need to set up your environment:
@@ -55,7 +57,6 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
 ## Learn More
 
@@ -68,18 +69,3 @@ To learn more about project resources, take a look at the following resources:
 - [Shadcn](https://ui.shadcn.com)
 - [React Query](https://tanstack.com/query/latest/docs/framework/react/overview)
 - [Tailwindcss](https://tailwindcss.com)
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-

@@ -1,5 +1,5 @@
 
-import { engLangs, modelProviders } from "./data";
+import { engLangs, transcriptionModels } from "./data";
 import useUpdate from "./use-update";
 
 import {
@@ -37,7 +37,7 @@ function Transcriber({ id }: props) {
 
               <SelectContent>
                 {
-                  modelProviders?.map(p => (
+                  transcriptionModels?.map(p => (
                     <SelectItem value={p.val} key={p.val}>
                       {p.name}
                     </SelectItem>

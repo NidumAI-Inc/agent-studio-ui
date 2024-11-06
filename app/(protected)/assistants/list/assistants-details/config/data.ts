@@ -1,35 +1,69 @@
 
 export const modelProviders = [
   {
-    name: "Nidum Server",
-    val: "server",
+    name: "Open AI",
+    val: "open ai",
+  },
+  {
+    name: "Groq",
+    val: "qroq",
+  },
+]
+
+export const openAIModels = [
+  {
+    name: "GPT 4o",
+    val: "gpt-4o"
+  },
+  {
+    name: "GPT 4o Mini",
+    val: "gpt-4o-mini"
+  }
+]
+
+export const groqModels = [
+  {
+    name: "Meta Llama 3 70B",
+    val: "llama3-70b-8192"
+  },
+  {
+    name: "Meta Llama 3 8B",
+    val: "llama3-8b-8192"
+  },
+  {
+    name: "Mixtral 8x7B",
+    val: "mixtral-8x7b-32768"
+  },
+  {
+    name: "Gemma 7B",
+    val: "gemma-7b-it"
+  },
+  {
+    name: "Gemma 2 9B",
+    val: "gemma2-9b-it"
+  }
+]
+
+export const voiceProviders = [
+  {
+    name: "Open AI",
+    val: "open ai",
   },
 ]
 
 export const voiceList = [
-  { name: "Amber", val: "alloy" },
-  { name: "Emma", val: "echo" },
-  { name: "Scarlet", val: "fable" },
-  { name: "Stephen", val: "onyx" },
-  { name: "Natalie", val: "nova" },
-  { name: "Sophia", val: "shimmer" }
-]
-
-export const models = [
-  {
-    name: "LLM Large",
-    val: "server 1",
-  },
-  {
-    name: "LLM Mini",
-    val: "server 2",
-  },
+  { name: "Alloy", val: "alloy" },
+  { name: "Echo", val: "echo" },
+  { name: "Fable", val: "fable" },
+  { name: "Onyx", val: "onyx" },
+  { name: "Nova", val: "nova" },
+  { name: "Shimmer", val: "shimmer" }
 ]
 
 export const transcriptionModels = [
   {
-    name: "Whisper",
-    val: "whisper"
+    name: "Deep gram",
+    val: "deepgram"
   }
 ]
 

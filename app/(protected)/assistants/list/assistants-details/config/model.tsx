@@ -1,5 +1,5 @@
 
-import { modelProviders, models } from "./data";
+import { modelProviders, openAIModels, groqModels } from "./data";
 import useUpdate from "./use-update";
 
 import {
@@ -19,6 +19,8 @@ type props = {
 
 function Model({ id }: props) {
   const { details, onChange, onSelect } = useUpdate(id)
+
+  const models = details.LLM_provider === "open ai" ? openAIModels : groqModels
 
   return (
     <Card title="Model" description="LLM Configurations">

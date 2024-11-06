@@ -10,13 +10,13 @@ function NavBar() {
 
   return (
     <nav className="navbar df justify-between px-4 py-2">
-      <div className="df w-44 md:[.minimise_&]:w-10 text-nowrap overflow-hidden transition-all duration-300">
+      <div className="df w-[178px] md:[.minimise_&]:w-10 text-nowrap overflow-hidden transition-all duration-300">
         <img
           src="/logo.png"
           alt="Nidum-logo"
           className="h-9"
         />
-        <p className=" text-lg font-bold tracking-widest">Voice Agent</p>
+        <p className=" text-lg font-bold tracking-widest">Agent Studio</p>
       </div>
 
       <button

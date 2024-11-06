@@ -1,5 +1,5 @@
 
-import { modelProviders, voiceList } from "../data";
+import { voiceProviders, voiceList } from "../data";
 import useUpdate from "../use-update";
 
 import {
@@ -37,7 +37,7 @@ function Config({ id }: props) {
 
               <SelectContent>
                 {
-                  modelProviders?.map(p => (
+                  voiceProviders?.map(p => (
                     <SelectItem value={p.val} key={p.val}>
                       {p.name}
                     </SelectItem>
@@ -62,16 +62,11 @@ function Config({ id }: props) {
 
               <SelectContent>
                 {
-                  details?.TTS_provider === "server" && voiceList?.map(p => (
+                  voiceList?.map(p => (
                     <SelectItem value={p.val} key={p.val}>
                       {p.name}
                     </SelectItem>
                   ))
-                }
-
-                {
-                  details?.TTS_provider !== "server" &&
-                  <SelectItem value="default">Default</SelectItem>
                 }
               </SelectContent>
             </Select>

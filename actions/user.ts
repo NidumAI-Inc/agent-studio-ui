@@ -6,7 +6,7 @@ export function getUserMLId(email: string) {
 }
 
 export function createUser(email: string) {
-  return axios.post(`${endPoints.backendUrl}/users`, { email })
+  return axios.post(`${endPoints.backendUrl}/users/`, { email })
 }
 
 export function forgetPass(email: string) {

@@ -22,11 +22,11 @@ type base = {
 }
 
 export function createAgent(userId: string, payload: sipPayloadT) {
-  return axios.post(`${endPoints.backendUrl}/users/${userId}/agents`, payload).then(r => r.data)
+  return axios.post(`${endPoints.backendUrl}/users/${userId}/agents/`, payload).then(r => r.data)
 }
 
 export function getAgentsByUserId(userId: string) {
-  return axios.get(`${endPoints.backendUrl}/users/${userId}/agents`).then(r => r.data)
+  return axios.get(`${endPoints.backendUrl}/users/${userId}/agents/`).then(r => r.data)
 }
 
 export function getAgentById({ userId, agentId }: base) {

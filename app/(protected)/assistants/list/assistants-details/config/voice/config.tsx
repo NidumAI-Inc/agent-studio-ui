@@ -1,6 +1,7 @@
 
 import { voiceProviders, voiceList } from "../data";
 import useUpdate from "../use-update";
+import config from "@/lib/config";
 
 import {
   Select,
@@ -19,7 +20,7 @@ function Config({ id }: props) {
   const { details, onSelect } = useUpdate(id)
 
   return (
-    <Card title="Voice Configuration" description="Choose from the list of voices available from Nidum server.">
+    <Card title="Voice Configuration" description={`Choose from the list of voices available from ${config.companyName} server.`}>
       <div className="p-3.5 bg-background-light rounded-xl border">
         <div className="grid @lg:grid-cols-2 gap-4 mb-4">
           <div>

@@ -2,8 +2,8 @@
 
 import { Controller, FieldErrors, useFieldArray, useForm } from "react-hook-form";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
+import { LuCirclePlus, LuTrash } from "react-icons/lu";
 import { MdOutlineCampaign } from "react-icons/md";
-import { LuPlusCircle, LuTrash } from "react-icons/lu";
 import PhoneInput from 'react-phone-input-2';
 
 import { addNumsToCampaign } from "@/actions";
@@ -127,7 +127,7 @@ function AddMembers() {
             onClick={() => append({ phone_number: "" })}
             className="df mb-6 text-xs font-medium bg-primary/20 text-foreground hover:bg-primary hover:text-primary-foreground"
           >
-            <LuPlusCircle /> Add Field
+            <LuCirclePlus /> Add Field
           </button>
 
           <div className="df">

@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 
 import getCollection from '@/lib/get-collection';
 import transporter from '@/utils/mailer';
+import config from '@/lib/config';
 
 export async function POST(req: Request) {
   try {
@@ -28,7 +29,7 @@ export async function POST(req: Request) {
         <p style="margin-bottom:1rem;">Following is the reset password key,</p>
         <p style="margin-bottom:2rem;">${passKey}</p>
         <p>Best,</p>
-        <p>Nidum Team</p>
+        <p>${config.companyName} Team</p>
         `
     })
 

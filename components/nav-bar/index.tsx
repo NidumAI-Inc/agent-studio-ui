@@ -13,7 +13,7 @@ function NavBar() {
       <div className="df w-[178px] md:[.minimise_&]:w-10 text-nowrap overflow-hidden transition-all duration-300">
         <img
           src="/logo.png"
-          alt="Nidum-logo"
+          alt="logo"
           className="h-9"
         />
         <p className=" text-lg font-bold tracking-widest">Agent Studio</p>

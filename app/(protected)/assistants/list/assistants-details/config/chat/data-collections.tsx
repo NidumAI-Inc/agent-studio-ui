@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { useFieldArray, useForm, Controller, FieldErrors } from 'react-hook-form';
-import { LuCheck, LuPlusCircle, LuTrash } from 'react-icons/lu';
+import { LuCheck, LuCirclePlus, LuTrash } from 'react-icons/lu';
 
 import { useChatBot, useUpdateChatBot } from '@/hooks/use-chat-bot';
 import { useToast } from '@/hooks/use-toast';
@@ -284,7 +284,7 @@ function DataCollections({ id }: props) {
                         onClick={() => field.onChange([...field.value, { value: '' }])}
                         className='text-foreground/70 hover:text-primary'
                       >
-                        <LuPlusCircle />
+                        <LuCirclePlus />
                       </button>
                     </>
                   )}
@@ -309,7 +309,7 @@ function DataCollections({ id }: props) {
           onClick={() => append({ name: '', type: "text", enabled: true, required: true })}
           className="df text-xs font-medium bg-primary/20 text-foreground hover:bg-primary hover:text-primary-foreground"
         >
-          <LuPlusCircle /> Add Field
+          <LuCirclePlus /> Add Field
         </button>
 
         {isDirty && (

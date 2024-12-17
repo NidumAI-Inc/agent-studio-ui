@@ -2,9 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import ClientWrapper from "@/components/client-wrapper";
+import config from "@/lib/config";
 
 export const metadata: Metadata = {
-  title: "Nidum Agent",
+  title: `${config.companyName} Agent`,
   description: "",
 };
 

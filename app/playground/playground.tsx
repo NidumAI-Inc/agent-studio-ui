@@ -18,6 +18,7 @@ import {
 } from "livekit-client";
 
 import { useMultibandTrackVolume } from "@/hooks/use-track-volume";
+import config from "@/lib/config";
 
 import AudioVisualizer from "./audio-visualizer";
 import LoadingSVG from "./loading-svg";
@@ -113,7 +114,7 @@ function Playground({ onConnect }: PlaygroundProps) {
   const audioContent = useMemo(() => {
     const disconnectedContent = (
       <div className="flex flex-col items-center justify-center gap-2 text-gray-400 text-center w-full h-full">
-        <p className="text-2xl">Nidum Agent</p>
+        <p className="text-2xl">{config.companyName} Agent</p>
         <p className="text-sm">Connect to get started</p>
       </div>
     )
@@ -164,10 +165,10 @@ function Playground({ onConnect }: PlaygroundProps) {
         <div className="flex items-center">
           <img
             src="https://raw.githubusercontent.com/aivfkesavan/installation-guide-site/main/public/logo.png"
-            alt="Nidum Logo"
+            alt="Logo"
             className="h-8 sm:h-10 w-auto mr-2 sm:mr-4"
           />
-          <h1 className="text-base sm:text-xl md:text-3xl tracking-wider">Nidum <span>Conversational Agent</span></h1>
+          <h1 className="text-base sm:text-xl md:text-3xl tracking-wider">{config.companyName} <span>Conversational Agent</span></h1>
         </div>
 
         <button

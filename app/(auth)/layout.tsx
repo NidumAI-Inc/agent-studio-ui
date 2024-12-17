@@ -9,7 +9,7 @@ function Layout({ children }: props) {
       <nav className="df justify-center p-4 sm:absolute sm:top-0 sm:left-0">
         <img
           src="/logo.png"
-          alt="Nidum-logo"
+          alt="logo"
           className="h-9"
         />
         <p className="text-lg font-bold tracking-widest">Agent Studio</p>
